@@ -1,0 +1,44 @@
+
+
+main {
+    width: 100%;
+    margin: auto;
+    padding: 0% 10%;
+    box-sizing: border-box;
+    background-color: #F8F3EC;
+}
+
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    padding-top: 2vh;
+}
+
+#aboutText {
+    text-align: justify;
+    font-size: 1em;
+    margin-top: 2vh; /* Ajoutez cette ligne */
+}
+
+/* Styles pour les écrans de moins de 767px de large */
+@media (max-width: 767px) {
+    main {
+        width: 100%;
+    }
+
+    #about h2 {
+        font-size: 1rem;
+    }
+
+    #aboutText {
+        font-size: 0.8em;
+    }
+
+    #footerPropos {
+        display: none;
+    } 
+        
+}

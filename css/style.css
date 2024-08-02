@@ -1,0 +1,205 @@
+main {
+    background-color: #F8F3EC;
+}
+
+main section img {
+    height: 15vw;
+    width: 15vw;
+}
+
+main h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 2vh;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    padding: 3% 10%;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#occasions {
+    background-color: #F8F3EC;
+}
+
+
+
+#containerMariage, #containerNaissance, #containerBapteme, #containerNoel {
+    display: flex;
+    margin: 2%;
+}
+
+#mariageBox, #naissanceBox, #baptemeBox, #noelBox {
+    position: absolute;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    background-color: #fff;
+}
+
+.mariaget, .naissancet, .baptemet, .noelt {
+    width: 15vw;
+    text-align: center;
+    font-size: 1vw;
+    align-self: flex-end;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F0ECE5;
+}
+
+#textsupports {
+    background-color: #F0ECE5;
+    padding-top: 2vh;
+    font-size: 1.5vw;
+}
+
+#containerBois, #containerTissu, #containerPlastique, #containerVerre {
+    display: flex;
+    margin: 2%;
+}
+
+#boisBox, #tissuBox, #plastiqueBox, #verreBox {
+    position: absolute;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    background-color: #fff;
+}
+
+.boist, .tissut, .plastiquet, .verret {
+    position: relative;
+    width: 15vw;
+    text-align: center;
+    font-size: 1vw;
+    align-self: flex-end;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+#containerForm {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#containerForm img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.form textarea {
+  height: 200px;
+}
+
+.form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .container1, .container2 {
+    display: grid;
+    grid-template-columns: 2vw 23vw ;
+    row-gap: 2vh;
+    
+    }
+
+    #mariageBox, #naissanceBox, #baptemeBox, #noelBox, #boisBox, #tissuBox, #plastiqueBox, #verreBox {
+        border-radius: 8px;
+        width: 25vw;
+    }
+
+    main section img {
+        height: 25vw;
+        width: 25vw;
+        border-radius: 8px;
+    }
+
+    .mariaget, .naissancet, .baptemet, .noelt, .boist, .tissut, .plastiquet, .verret {
+        font-style:bold;
+        /* font-weight:normal; */
+        font-size:0.8em;
+        width: 100%;
+    }
+
+    #textoccasions, #textsupports {
+        width: 100%;
+        font-size: 0.6em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

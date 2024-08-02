@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F8F3EC;
+    color: #333;
+}
+
+#conteneurPrincipal {
+    display: flex;
+    flex-direction: row;
+    padding: 3% 10%;
+    align-items: flex-start;
+    justify-content: space-between; /* Utilisez space-between pour répartir uniformément l'espace */
+    box-sizing: border-box;
+}
+
+#barreLaterale {
+    width: 20%;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 25vh; /* Hauteur de la barre latérale */
+    overflow: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#barreLaterale ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime l'espace intérieur autour de la liste */
+}
+
+#barreLaterale ul li {
+    padding: 10px 0; /* Ajoute de l'espace au-dessus et en dessous de chaque élément de la liste */
+}
+
+#barreLaterale ul li a {
+    color: #333; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+#barreLaterale ul li a:hover {
+    color: rgb(91, 91, 211); /* Couleur du texte des liens au survol */
+}
+
+#zoneContenu {
+    width: 75%;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si le contenu dépasse la largeur */
+}
+
+#messageAccueil {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 2vh;
+    color: #666;
+}
+
+#sectionCommandes, #sectionUtilisateurs, #sectionCreationArticle, #sectionArticles {
+    margin: 2%;
+}
+
+#tableauCommandes, #tableauUtilisateurs, #tableauArticles {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#tableauCommandes th, #tableauUtilisateurs th, #tableauArticles th {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tableauCommandes td, #tableauUtilisateurs td, #tableauArticles td {
+    padding: 20px;
+}
+
+#formulaireSuppressionUtilisateur, #formulaireCreationArticle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#formulaireSuppressionUtilisateur input[type="submit"], #formulaireCreationArticle input[type="submit"] {
+    background-color:  rgb(91, 91, 211);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formulaireSuppressionUtilisateur input[type="submit"]:hover, #formulaireCreationArticle input[type="submit"]:hover {
+   background-color:rgb(212, 90, 90);
+}
+
+img .tableauArticles {
+    width: 100px;
+    height: 100px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #conteneurPrincipal {
+        flex-direction: column-reverse;
+    }
+
+    #barreLaterale, #zoneContenu {
+        width: 100%;
+    }
+
+    #barreLaterale {
+        bottom: 0;
+        position: sticky;
+    }
+
+    #messageAccueil {
+        font-size: 2em;
+    }
+
+    #tableauCommandes, #tableauUtilisateurs, #tableauArticles {
+        font-size: 0.8em;
+    }
+}
+
+
+
+    div[style*="overflow-x:auto;"] table {
+        width: 100%;
+        display: block;
+    }

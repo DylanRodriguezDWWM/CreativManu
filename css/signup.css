@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 1rem;
+    text-align: center;
+    padding-top: 2vh;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(91, 91, 211);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 50% !important;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }

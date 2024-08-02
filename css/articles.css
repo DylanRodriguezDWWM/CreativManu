@@ -1,0 +1,74 @@
+@import url(./css/style.css);
+
+#containerArticlesMariages {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 2%; 
+    box-sizing: border-box;
+}
+
+.articlesMariages {
+    flex: 1 1 22%; 
+    max-width: 20%;
+    margin: 0 1%; 
+    box-sizing: border-box;
+    padding: 0 1%; 
+    height: auto
+}
+
+.articlesMariages img {
+    width: 100%;
+    height: 300px; /* Définissez une hauteur spécifique */
+    object-fit: cover; /* L'image couvrira entièrement la zone de contenu, en coupant les parties qui dépassent */
+    margin: 10px auto; 
+}
+
+.articlesMariages p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    margin-right: 10px; 
+}
+
+#produitsMariage {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 2vh;
+}
+
+@media screen and (max-width: 767px) {
+    #containerArticlesMariages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #textarticle {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2vh;
+    }
+
+    .articlesMariages {
+        border-radius: 8px;
+        flex: 1 1 45%; /* Les articles prennent la moitié de la largeur sur les petits écrans */
+        max-width: 45%; /* Les articles prennent la moitié de la largeur sur les petits écrans */
+        margin: 10px; /* Ajoutez une marge pour éviter que les articles ne soient collés les uns aux autres */
+    }
+
+    .articlesMariages img {
+        width: 100%;
+        height: 150px; /* Définissez une hauteur spécifique pour les petits écrans */
+        object-fit: cover; /* L'image couvrira entièrement la zone de contenu, en coupant les parties qui dépassent */
+        margin: 10px auto; 
+    }
+}
